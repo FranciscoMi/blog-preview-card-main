@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="background-body">
+  <section class="card">
+    <div class="card-image">
+      <img alt="ilustration" src="/assets/images/illustration-article.svg">
+    </div>
+    <div class="card-body">
+      <button class="card-btn">
+        Learning
+      </button>
+      <p class="card-par card-par--date">Published 10 Aug 2024</p>
+      <p class="card-par card-par--title">HTML & CSS foundations</p>
+      <p class="card-par card-par--text">These languages are the backbone of every website, defining structure, content, and presentation</p>
+    </div>
+    <div class="card-firm">
+      <img alt="perfil" src="/assets/images/image-avatar.webp"><span class="card-par card-par--firm">Greg Hooper</span>
+    </div>
+  </section>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
+  <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Fco. Miguel López</a>.
   </div>
+  </footer>
 </body>
 </html>
