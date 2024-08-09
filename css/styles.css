@@ -1,0 +1,109 @@
+/*
+Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+- Yellow: hsl(47, 88%, 63%)
+
+- White: hsl(0, 0%, 100%)
+
+- Gray 500: hsl(0, 0%, 42%)
+- Gray 950: hsl(0, 0%, 7%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800
+*/
+@font-face {
+  font-family: 'Figtree Variable';
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Figtree Variable bold';
+  src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+}
+
+:root{
+  --border-r:15px;
+  --color-text:hsl(47, 88%, 63%);
+  --card-image-width: 336px; 
+}
+
+
+body, html{
+  align-items: center;
+  background-color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+.card{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: var(--border-r);
+  font-family: "Figtree Variable";
+  max-width: 350px;
+  height: 475px;
+  padding: calc(350px - var(--card-image-width));
+}
+
+.card-image{
+  display: inline-block;
+  border-radius: var(--border-r);
+}
+
+.card-body{
+  width: var(--card-image-width);
+}
+
+.card-btn{
+  background-color: var(--color-text);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Figtree Variable bold';
+  margin: 1em 0 0;
+  padding: 0.5em 0.75em;
+}
+
+.card-firm{
+  display:flex;
+  align-items: center;
+}
+
+.card-par{
+  font-size: 16px;
+}
+
+.card-par--date{
+  font-size: 12px;
+}
+
+.card-par--title{
+  font-size: 18px;
+  font-family: 'Figtree Variable bold';
+}
+
+.card-par--firm{
+  font-family: 'Figtree Variable bold';
+  padding-left: 1em;
+}
