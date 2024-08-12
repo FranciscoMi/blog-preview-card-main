@@ -1,4 +1,7 @@
-# Frontend Mentor - Blog preview card solution
+```html
+<h1>README under development</h1>
+```
+# Frontend Mentor - Blog preview card solution 
 
 This is my solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). A simple proyect to consolidate my most basic skills with css. I hope you enjoy it.
 
