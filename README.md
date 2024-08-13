@@ -49,9 +49,14 @@ Users should be able to:
 
 ### What we have learned
 
-- Agregar el tipo de letra FigTree al CSS
+- Usar la función clamp() en css para escalar los elementos de la web
 
-To see how you can add code snippets, see below:
+clamp() en css nos permite establecer un rango de valores posibles a un elemento HTML. La sintáxis es la siguiente:
+```css
+property: clamp(min, ideal, max);
+```
+
+- Trabajar con unidades de medida en CSS (Diferencias entre <b>em</b> y <b>rem</b>)
 
 ```html
 <h1>Some HTML code I'm proud of</h1>

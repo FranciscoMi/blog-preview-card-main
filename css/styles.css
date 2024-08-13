@@ -42,37 +42,43 @@ The designs were created to the following widths:
 
 :root{
   --border-r:15px;
-  --color-text:hsl(47, 88%, 63%);
-  --card-image-width: 300px; 
+  --color-background:hsl(47, 88%, 63%);
+  --color-par:hsl(0,0%,50%);
 }
 
 
 body, html{
   align-items: center;
-  background-color: var(--color-text);
+  background-color: var(--color-background);
   display: flex;
   flex-direction: column;
+  font-size: 100%;
   height: 100%;
-  min-width: 320px;
   justify-content: center;
 }
+
 
 .card{
   background-color: white;
   border: 1px solid black;
   border-radius: var(--border-r);
-  box-shadow: 10px 10px rgba(0,0,0,1);
+  box-shadow: 0.5em 0.5em rgba(0,0,0,1);
   box-sizing: border-box;
-  font-size: 12px;
+  font-size: clamp(0.50em, 1.5vw + 0.5em, 1em);
   font-family: "Figtree Variable";
-  margin-bottom: 20px;
-  max-width: calc(var(--card-image-width) - 20px);
+  margin: 0 10px 20px;
+  max-width: 350px;
+  min-width: 285px;
   height: auto;
-  padding: 15px;
+  padding: 1em;
 }
 
 .card__bold{
   font-family: 'Figtree Variable bold';
+}
+
+.card__grey{
+  color:var(--colo-par);
 }
 
 .card-image{
