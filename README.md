@@ -1,6 +1,4 @@
-```html
-<h1>README under development</h1>
-```
+
 # Frontend Mentor - Blog preview card solution 
 
 This is my solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). A simple proyect to consolidate my most basic skills with css. I hope you enjoy it.
@@ -18,8 +16,6 @@ This is my solution to the [Blog preview card challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -64,11 +60,6 @@ property: clamp(min, ideal, max);
 ```css
 .proud-of-this-css {
   color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
 }
 ```
 
