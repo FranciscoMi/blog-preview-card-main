@@ -11,11 +11,9 @@ This is my solution to the [Blog preview card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What we have learned](#What-we-have-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [What I have learned](#What-I-have-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -32,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://franciscomi.github.io/blog-preview-card-main/]
+
 
 ## My process
 
@@ -41,41 +39,53 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 
-### What we have learned
-
-- Usar la función clamp() en css para escalar los elementos de la web
-
-clamp() en css nos permite establecer un rango de valores posibles a un elemento HTML. La sintáxis es la siguiente:
-```css
-property: clamp(min, ideal, max);
-```
+### What I have learned
 
 - Trabajar con unidades de medida en CSS (Diferencias entre <b>em</b> y <b>rem</b>)
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+  'em' es una unidad relativa de CSS que se basa en el tamaño de la fuente del elemento padre. 
+  
+  En nuestro caso hemos establecido el tamaño del elemento <body> de HTML en 16px. <body> inicialmente sería '1em'. Si ponemos '0.5em' sería la mitad del tamaño de la fuente. Esto es igual para otras propiedades como 'margin' o 'padding'.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+  ```css
+  /*Elemento padre*/
+  body{
+    font-size:16px
+  }
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+  /*Elemento hijo*/
+  div{
+    font-size:0.5em; /*Serían 8px*/
+    margin-left:1em; /*El margen derecho de la caja es de 16px*/
+  }
+  ```
+
+  'rem' es similar a 'em', pero con la diferencia de que en lugar de ser relativo al tamaño de fuente de un elemento padre, es relativo al tamaño de la fuente raíz (normalmente el <html> o el <body>).
+
+  ```css
+  div{
+    font-size:0.5rem;
+    margin-left:1rem;
+  }
+  ```
 
 
-### Useful resources
+- Usar la función 'clamp()' en css para escalar los elementos de la web
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+  'clamp()' en css nos permite establecer un rango de valores posibles a un elemento HTML. La sintáxis es la siguiente:
+  ```css
+  property: clamp(min, ideal, max);
+  ```
+  En nuestro caso queremos mantener el tamaño de letra de nuestra tarjeta, que ha sido establecido en 16px siendo 16px=1rem, entre un mínimo de 8px y un máximo de 16px, siendo el ideal el que depende del tamaño del ancho de la página.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+  ```css
+  .card{
+    font-size: clamp(0.50rem, 1.5vw + 0.5rem, 1rem); 
+  }
+  ```
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [https://franciscomi.github.io/blog-preview-card-main/]
+- Frontend Mentor - [@FranciscoMi](https://www.frontendmentor.io/profile/FranciscoMi)
